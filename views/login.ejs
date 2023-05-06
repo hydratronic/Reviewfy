@@ -1,0 +1,71 @@
+<!-- Link to the CSS file -->
+<link rel="stylesheet" href="/css/home.css" />
+<!-- Section that covers the entire viewport height -->
+<section class="vh-100">
+  <!-- Container with padding that covers the entire height of the section -->
+  <div class="container py-5 h-100">
+
+<!-- Flexbox row with centered items -->
+<div class="row d-flex justify-content-center align-items-center h-100">
+
+  <!-- Column with width depending on the screen size -->
+  <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+
+    <!-- Card with transparent background and border radius and shadow -->
+    <div class="card bg-transparent text-white" style="border-radius: 1rem; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3)">
+
+      <!-- Card body with padding and centered text -->
+      <div class="card-body p-5 text-center">
+
+        <!-- Container with margin and padding for the heading -->
+        <div class="mb-md-5 mt-md-4 pb-5">
+          
+          <!-- Heading with margin and uppercase text -->
+          <h2 class="fw-bold mb-2 text-uppercase" style="color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';">Welcome Back!</h2>
+
+          <!-- Paragraph with margin and light text color -->
+          <p class="text-white-50 mb-5">
+            Enter your email and password.
+          </p>
+
+          <!-- Form that submits data to the specified URL using HTTP POST method -->
+          <form action="/users/create-session" method="post">
+
+            <!-- Container with margin for the email input field -->
+            <div class="form-outline form-white mb-4">
+
+              <!-- Label for the email input field -->
+              <label class="form-label" for="email" style="color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';">Your Email</label>
+
+              <!-- Input field for the email with placeholder text -->
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control form-control-lg"
+                placeholder="Email address"
+                style="background-color: #f2f2f2;  color: #000000; border-color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';"
+              />
+            </div>
+
+            <!-- Container with margin for the password input field -->
+            <div class="form-outline form-white mb-4">
+
+              <!-- Label for the password input field -->
+              <label class="form-label" for="password" style="color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';">Password</label>
+
+              <!-- Input field for the password with placeholder text -->
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control form-control-lg"
+                placeholder="Password"
+                style="background-color: #f2f2f2; color: #000000; border-color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';"
+              />
+            </div>
+
+            <!-- Button for submitting the form data -->
+            <button class="btn btn-outline-light btn-lg px-5" type="submit" style="background-color: #D27685; border: none;">
+              Login
+            </button>

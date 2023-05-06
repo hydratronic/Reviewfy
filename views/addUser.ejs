@@ -1,0 +1,107 @@
+<!-- Link to the home.css stylesheet -->
+<link rel="stylesheet" href="/css/home.css" />
+
+<!-- Full-page section -->
+<section class="vh-100">
+
+  <!-- Container with padding and full height -->
+  <div class="container py-5 h-100">
+
+    <!-- Row centered both horizontally and vertically -->
+    <div class="row d-flex justify-content-center align-items-center h-100">
+
+      <!-- Column sizes for different screen sizes -->
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+
+        <!-- Transparent card with white text, rounded corners, and box shadow -->
+        <div class="card bg-transparent text-white" style="border-radius: 1rem; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3)">
+
+          <!-- Card body with padding and text centered vertically -->
+          <div class="card-body p-5 text-center">
+
+            <!-- Title for the form section -->
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2 class="fw-bold mb-2 text-uppercase" style="color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';">ADD USER</h2>
+
+              <!-- Form for creating a new user -->
+              <form action="/users/create-user" method="post">
+
+                <!-- Form input for user's name -->
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="name" style="color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control form-control-lg"
+                    placeholder="Enter Name"
+                    style="background-color: #f2f2f2; color: #000000; border-color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';"
+                  />
+                </div>
+
+                <!-- Form input for user's email -->
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="email" style="color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control form-control-lg"
+                    placeholder="Enter Email"
+                    style="background-color: #f2f2f2; color: #000000; border-color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';"
+                  />
+                </div>
+
+                <!-- Form input for user's password -->
+                <!-- Create a form input for the user's password -->
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="password" style="color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control form-control-lg"
+                  placeholder="Enter Password"
+                  style="background-color: #f2f2f2; color: #000000; border-color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';"
+                />
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <label class="form-label" for="pass" style="color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';">Confirm Password</label>
+                <input
+                  type="password"
+                  id="pass"
+                  name="password2"
+                  class="form-control form-control-lg"
+                  placeholder="Enter Confirm Password"
+                  style="background-color: #f2f2f2; color: #000000; border-color: #ffffff; font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans';"
+                />
+              </div>
+
+              <button class="btn btn-outline-light btn-lg px-5" type="submit" style="background-color: #D27685; border: none;">
+                Register
+              
+
+              </button>
+
+              <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                <a href="#!" class="text-white"
+                  ><i class="fab fa-facebook-f fa-lg"></i
+                ></a>
+                <a href="#!" class="text-white"
+                  ><i class="fab fa-twitter fa-lg mx-4 px-2"></i
+                ></a>
+                <a href="#!" class="text-white"
+                  ><i class="fab fa-google fa-lg"></i
+                ></a>
+              </div>
+            </div>
+
+            
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

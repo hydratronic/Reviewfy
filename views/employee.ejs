@@ -1,0 +1,45 @@
+<!-- Import the home.css file -->
+<link rel="stylesheet" href="/css/home.css">
+<!-- Display the heading -->
+<h3 class="text-center mt-3" style="font-family: monospace">
+  All Employees List
+</h3>
+<!-- Create a container for the table -->
+<div class="container mt-4" style="font-family: monospace">
+  <!-- Create a table -->
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">Admin</th>
+        <th scope="col">Del Button</th>
+      </tr>
+    </thead>
+
+<tbody>
+  <% for(let i=0;i < employees.length;i++){ %>
+  
+  <!-- Display employee details in each row -->
+  <tr>
+    <td><%=employees[i].name %></td>
+    <td><%=employees[i].email %></td>
+    <td><%=employees[i].password %></td>
+    <td><%=employees[i].isAdmin %></td>
+    
+    <!-- Create a delete button for each employee -->
+    <td>
+      <a
+        href="/admin/delete-employee/<%=employees[i]._id%>"
+        class="btn btn-danger"
+      >
+        Delete
+      </a>
+    </td>
+  </tr>
+  
+  <% } %>
+</tbody>
+  </table>
+</div>

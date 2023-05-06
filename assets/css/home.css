@@ -1,0 +1,212 @@
+/* Set the font family for the whole page */
+body {
+  font-family: 'Open Sans', 'sans-serif: https://fonts.google.com/specimen/Open+Sans'
+}
+
+/* Set the background color using a gradient */
+body {
+  background-color: #FFB4B4;
+  background-image: linear-gradient(315deg, #cc2b5e  0%, #753a88 100%);
+}
+
+
+/* Add padding and border to form controls */
+.form-control {
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.container-fluid {
+  max-height: 60px; /* set the maximum width to 1200 pixels */
+  margin: 0 auto; /* center the container horizontally */
+}
+.navbar-brand {
+  padding-top: 3.3rem;
+  
+}
+
+
+
+
+/* Add a shadow effect to form controls when they're focused */
+.form-control:focus {
+  box-shadow: 0px 0px 5px 1px #3f72af;
+}
+
+/* Set the size and color of the submit button */
+.btn-primary {
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  background-color: #ec8c69;
+  border: none;
+}
+
+/* Add a hover effect to the submit button */
+.btn-primary:hover {
+  background-color: #7d53de;
+}
+
+/* Set the font size and color of headings */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px #333;
+}
+
+/* Set the color and size of links */
+a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* Add a hover effect to links */
+a:hover {
+  color: #3f72af;
+}
+
+/* Style for To Review card */
+.to-review-card {
+
+  background-color: #f8f9fa;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  margin-bottom: 2rem;
+}
+
+/* Style for From Review card */
+.from-review-card {
+  background-color: #f8f9fa;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+/* Style for review author */
+.review-author {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Style for review message */
+.review-message {
+  font-size: 1.2rem;
+}
+
+/* Set a unique style for the body container */
+#body-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+}
+
+/* Set a unique style for the review cards */
+.card {
+  margin: 1rem;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a border to the review card title */
+.card-title {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+.card-title {
+  color: #E86A33 ;
+  text-shadow: none;
+  }
+
+/* Set a unique style for the review message */
+.card-text {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ffffff;
+  text-align: justify;
+  line-height: 4;
+  }
+  
+  .review {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  }
+  
+  .review .author {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  }
+  
+  .review .date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+  }
+ 
+  button:hover {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    color: #fff;
+  }
+
+  .card-body {
+    background-color:#42275a ;
+  }
+  
+ 
+
+  .card {
+    background-color: #cc2b5e;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .col-md-5{
+    padding-top: 100px;
+  }
+  .card-header{
+    background-color:#cc2b5e ;
+  }
+
+  .form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+  }
+
+  .form_button {
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+  }
+
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+
+  
+  

@@ -1,0 +1,54 @@
+<!-- Include CSS file -->
+<link rel="stylesheet" href="/css/home.css">
+<!-- Create a fluid container -->
+<div class="container-fluid">
+  <div class="row">
+
+<!-- Create a column with width 5 out of 12 -->
+<div class="col-md-5">
+  <div class="card">
+    <!-- Create a title for the card -->
+    <div class="text-white">
+      <h1 class="text-center"  style="color: #FCE22A ; font-weight: bold;">To Review</h1>
+    </div>
+    <div class="card-body">
+      <!-- Loop through recipients and display a form for each one -->
+      <% for(let r of recipients){ %> 
+        <div class="review-card">
+          <h5 class="card-title"  style="color: #cc2b5e; font-weight: bold;">To:<%= r.name %></h5>
+          <form action="/reviews/newReview/<%= r._id %>" method="get">
+            <!-- Create a form for submitting a review -->
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Leave a review here" id="floatingTextarea2" name="newReview" rows="5"></textarea>
+              <label for="floatingTextarea2">Leave a review here</label>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary">Submit Review</button>
+            </div>
+          </form>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<!-- Create a column with width 6 out of 12 -->
+<div class="col-md-6">
+  <div class="card">
+    <!-- Create a title for the card -->
+    <div class="text-white">
+      <h1 class="text-center"  style="color: #FCE22A ; font-weight: bold;">My Reviews</h1>
+    </div>
+    <div class="card-body">
+      <!-- Loop through reviews and display them -->
+      <% for(let i = 0; i < reviews.length; i++) { %>
+        <div class="review-card">
+          <h5 class="card-title">From : <%= reviews[i].name %></h5>
+          <p class="card-text">Message : <%= reviews[i].review %></p>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>
+  </div>
+</div>

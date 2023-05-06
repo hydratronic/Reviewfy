@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/css/home.css" />
+
+<!-- Navigation bar with custom color -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav-color">
+  <div class="container-fluid">
+   
+    <a class="navbar-brand" href="/">
+      <!-- Website name as heading -->
+      <h1 class="text-center" style="color: #FCE22A;font-size: 4.5rem; font-weight: bold; text-shadow: 2px 2px 4px #000000;">Reviewfy</h1>
+    </a>
+
+    <!-- Navbar toggler for mobile devices -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="color: #FCE22A ; font-weight: bold;">
+      <ul class="navbar-nav">
+
+        <!-- If the user is logged in and not an admin, show logout button and user name -->
+        <% if(locals.user && !locals.user.isAdmin){ %>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #FCE22A ; font-weight: bold;" href="/users/logout">Log Out</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #FCE22A ; font-weight: bold;" href="#"><%= user.name %></a>
+        </li>
+
+        <!-- If the user is an admin, show admin-specific navbar items -->
+        <% }else if(locals.user && locals.user.isAdmin){ %>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #FCE22A ; font-weight: bold;" href="/admin/admin-page" >Assign Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #FCE22A ; font-weight: bold;" href="/admin/view-employees">Employees</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #FCE22A ; font-weight: bold;" href="/users/register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #FCE22A ; font-weight: bold;" href="/users/logout">Log Out</a>
+        </li>
+
+        <!-- If the user is not logged in, show login and register buttons -->
+        <% }else{ %>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #FCE22A ; font-weight: bold;" href="/users/login">Log In</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #FCE22A ; font-weight: bold;" href="/users/register">Register</a>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
