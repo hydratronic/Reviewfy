@@ -1,7 +1,7 @@
-<div class="container d-flex justify-content-between mt-4">
+<div class="container d-flex justify-content-center mt-4">
   <!-- Assign Reviewers card -->
   <div class="row col-md-6 card">
-    <h4 class="text-center" style="color: #FCE22A; font-weight: bold;">Assign Reviewers</h4>
+    <h4 class="text-center" style="color: #FCE22A; font-weight: bold;">Reviewer Allocation</h4>
     <hr />
 
     <!-- Form to assign reviewers to a recipient -->
@@ -52,31 +52,31 @@
   </div>
 
   <!-- Assign Admin card -->
-  <div class="row col-md-6 card">
+  <!-- <div class="row col-md-6 card">
     <h4 class="text-center" style="color: #FCE22A; font-weight: bold;">Assign Admin to Employees</h4>
     <hr />
 
     <!-- Form to assign admin to an employee -->
-    <form method="POST" action="/admin/newAdmin" class="mt-3">
+    <!-- <form method="POST" action="/admin/newAdmin" class="mt-3">
       <!-- Select employee from a dropdown menu -->
-      <select
+      <!-- <select
         class="form-select form-select-lg mb-3"
         aria-label=".form-select-lg example"
-        name="newAdmin"
-      >
+        name="newAdmin" -->
+      <!-- >
         <option selected disabled>Choose Employee</option>
         <% for(let i=0; i < employeeList.length; i++){ %>
         <!-- Display a list of employees as options -->
-        <option value="<%= employeeList[i].id %>">
+        <!-- <option value="<%= employeeList[i].id %>">
           <%= employeeList[i].name %>
         </option>
         <%}%>
-      </select>
+      </select> --> 
 
       <!-- Submit button to assign admin -->
-      <div class="d-grid gap-2 col-6 mx-auto form_button">
+      <!-- <div class="d-grid gap-2 col-6 mx-auto form_button">
         <input class="btn btn-dark" type="submit" value="Submit" />
       </div>
     </form>
-  </div>
+  </div> --> 
 </div>
