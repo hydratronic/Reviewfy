@@ -3,7 +3,7 @@
 
 Reviewfy is an Employee Feedback App where employees can give feedback to each other and an admin can manage the employees and their performance reviews. The app is built using Node.js, Express, MongoDB, EJS, HTML, and CSS.
 
-## Hosted link - https://reviewfy.onrender.com
+
 
 ## Features
 
